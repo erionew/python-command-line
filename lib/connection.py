@@ -19,3 +19,6 @@ class Contact(BaseModel):
     first_name = CharField()
     last_name = CharField()
     phone_number = CharField()
+
+db.drop_tables([Contact])
+db.create_tables([Contact])
